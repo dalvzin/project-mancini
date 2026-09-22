@@ -12,6 +12,7 @@ export function SiteFooter() {
     { href: '#story', label: t.nav.famiglia },
     { href: '#houses', label: t.nav.ristorante },
     { href: '#menu', label: t.nav.menu },
+    { href: '#music', label: t.nav.music },
     { href: '#events', label: t.nav.eventos },
     { href: '#giftcard', label: t.nav.giftcard },
     { href: '#calligraphia', label: t.nav.calligraphia },

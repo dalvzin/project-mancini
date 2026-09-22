@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useLang } from '@/lib/i18n/provider'
-import { houses, formatBRL, PDF_URL, type HouseId } from '@/lib/menu-data'
+import { houses, formatBRL, PDF_URLS, type HouseId } from '@/lib/menu-data'
 import { Reveal, SectionLabel } from './reveal'
 
 export function MenuExperience() {
@@ -39,7 +39,7 @@ export function MenuExperience() {
           </div>
           <Reveal delay={120}>
             <a
-              href={PDF_URL}
+              href={PDF_URLS[activeHouse]}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 self-start border border-ink/25 px-6 py-4 text-[0.72rem] uppercase tracking-[0.2em] text-ink transition-colors hover:bg-ink hover:text-cream"
@@ -90,6 +90,10 @@ export function MenuExperience() {
           </div>
         </Reveal>
 
+        {house.note && (
+          <p className="mt-4 text-sm font-light italic text-ink/50'>{house.note[lang]}</p>
+        )}
+
         <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-14">
           {/* Category nav */}
           <div className="lg:col-span-3">
@@ -133,11 +137,16 @@ export function MenuExperience() {
                       </p>
                     </div>
                     <span aria-hidden className="mx-2 hidden flex-1 self-end border-b border-dotted border-ink/25 sm:block" />
-                    {item.price != null && (
-                      <span className="shrink-0 font-serif text-xl italic text-ink md:text-2xl">
-                        {formatBRL(item.price)}
-                      </span>
-                    )}
+                    <div className='shrink-0 text-right'>
+                      {item.price != null && (
+                        <span className="font-serif text-xl italic text-ink md:text-2xl">
+                          {formatBRL(item.price)}
+                        </span>
+                      )}
+                      {item.serves && (
+                        <span className='mt-1 block text-[0.65rem] uppercase tracking-[0.16em] text-ink/40'>{item.serves}</span>
+                      )}
+                    </div>
                   </div>
                 </Reveal>
               ))}

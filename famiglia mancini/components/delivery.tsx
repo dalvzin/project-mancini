@@ -29,7 +29,7 @@ export function Delivery() {
           <Reveal delay={120}>
             <div className="flex flex-col items-start gap-3">
               <a
-                href="https://www.famigliamancini.com.br/"
+                href="https://url-eu.mykeeta.com/Sn65C7Fz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 bg-cream px-8 py-4 text-[0.72rem] uppercase tracking-[0.2em] text-espresso transition-colors hover:bg-beige"
@@ -38,7 +38,7 @@ export function Delivery() {
                 <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">↗</span>
               </a>
               <span className="text-[0.68rem] uppercase tracking-[0.18em] text-cream/60">
-                {t.delivery.note}
+                {t.delivery.note} · Diariamente das 18h às 23h
               </span>
             </div>
           </Reveal>

@@ -12,6 +12,7 @@ type Dict = {
     famiglia: string
     ristorante: string
     pizzaria: string
+    music: string
     menu: string
     eventos: string
     giftcard: string
@@ -136,6 +137,7 @@ const pt: Dict = {
     famiglia: 'A Famiglia',
     ristorante: 'As Casas',
     pizzaria: 'Pizzaria',
+    music: 'Música',
     menu: 'Cardápio',
     eventos: 'Eventos',
     giftcard: 'Gift Card',
@@ -318,6 +320,7 @@ const en: Dict = {
     famiglia: 'The Family',
     ristorante: 'The Houses',
     pizzaria: 'Pizzaria',
+    music: 'Music',
     menu: 'Menu',
     eventos: 'Events',
     giftcard: 'Gift Card',
@@ -500,6 +503,7 @@ const it: Dict = {
     famiglia: 'La Famiglia',
     ristorante: 'Le Case',
     pizzaria: 'Pizzeria',
+    music: 'Musica',
     menu: 'Menù',
     eventos: 'Eventi',
     giftcard: 'Gift Card',

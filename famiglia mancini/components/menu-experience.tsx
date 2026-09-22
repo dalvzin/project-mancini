@@ -91,7 +91,7 @@ export function MenuExperience() {
         </Reveal>
 
         {house.note && (
-          <p className="mt-4 text-sm font-light italic text-ink/50'>{house.note[lang]}</p>
+          <p className="mt-4 text-sm font-light italic text-ink/50">{house.note[lang]}</p>
         )}
 
         <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-14">
